@@ -1,0 +1,7 @@
+<% provide(:title, "Modifier le tag " + @tag.name) %>
+<h1>Modifier le tag</h1>
+
+<%= link_to 'Revenir à la liste des tags', tags_path %>
+
+<%= render 'form', tag: @tag %>
+

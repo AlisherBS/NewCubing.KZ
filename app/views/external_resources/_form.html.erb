@@ -1,0 +1,16 @@
+
+<%= simple_form_for(@external_resource) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :link %>
+    <%= f.input :description %>
+    <%= f.input :img %>
+    <%= f.input :rank, collection: resources_as_options, disabled: @external_resource.rank + 1, label: "Placer la ressource" %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

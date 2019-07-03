@@ -1,0 +1,46 @@
+<% provide(:title, "Historique du bureau") %>
+<% provide(:active_section, "association") %>
+<%= render "layouts/page_wrapper", title: "Historique du bureau", card_classes: "remove-padding" do %>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Période</th>
+        <th>Président·e</th>
+        <th>Trésorier·e</th>
+        <th>Secrétaire</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2010 - 2014</td>
+        <td>Clément Gallet</td>
+        <td>Guillaume Erbibou</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>2014 - 2016</td>
+        <td>Philippe Virouleau</td>
+        <td>Hippolyte Moreau</td>
+        <td>Gaël Dusser</td>
+      </tr>
+      <tr>
+        <td>2016 - 2017</td>
+        <td>Philippe Virouleau</td>
+        <td>Émilien Fabre</td>
+        <td>Lina Tissier</td>
+      </tr>
+      <tr>
+        <td>2018</td>
+        <td>Lina Tissier</td>
+        <td>Émilien Fabre</td>
+        <td>Jules Desjardin</td>
+      </tr>
+      <tr>
+        <td>2019 - en cours</td>
+        <td>Lina Tissier</td>
+        <td>Jules Desjardin</td>
+        <td>Antoine Piau</td>
+      </tr>
+    </tbody>
+  </table>
+<% end %>
